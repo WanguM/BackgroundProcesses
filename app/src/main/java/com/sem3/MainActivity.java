@@ -54,4 +54,11 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    public void btn (View view) {
+      startActivity(new Intent(getApplicationContext(),second.class));
+
+
+        overridePendingTransition(R.anim.push_down, R.anim.push_down_out);
+    }
+
 }
